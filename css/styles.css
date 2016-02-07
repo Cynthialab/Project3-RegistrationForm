@@ -1,0 +1,108 @@
+/*-------
+Global CSS Settings
+-------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0 auto;
+    font-size: .9em;
+    font-weight: 300;
+    color: #969ca2;
+    text-align: center;
+}
+
+.siteHeader {
+    margin: 10px auto;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+header {
+    padding: 20px 0;
+    background: #2d3945;
+}
+
+footer {
+    font-style: italic;
+}
+
+h2, legend {
+    color: #2d3945;
+}
+
+
+
+/*-------
+Form Settings
+-------*/
+
+.formIntro {
+    border-bottom: 1px solid #2d3945;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.introP {
+    padding-bottom: 10px;  
+}
+
+.formIntro::after {
+    display: block;
+    content: "";
+    border-top: solid 2px #2d3945;
+    padding-bottom: 2px;
+}
+
+legend {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+fieldset {
+    text-align: left;
+    border: none;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    background-color: #52bab3;
+    color: white;
+    font-size: 1.5em;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="text"] {
+    width: 100%;
+    background: #eaebec;
+    border-radius: 3px;
+    /*height: 40px;*/
+    padding: 5%;
+    border: none;
+    font-size: .8em;
+}
+
+label {
+    display: inline-block;
+    font-size: .8em;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+input[placeholder="Required"] {
+    text-align: right;
+    font-style: italic;
+}
