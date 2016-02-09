@@ -41,6 +41,7 @@
             
             <label for="state">State</label>
             <select>
+                <option selected disabled class="italics">Choose state</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -95,7 +96,7 @@
             </select>
             
             <label for="zipcode">Zip Code</label>
-            <input type="text" id="zipcode" name="user_zipcode">
+            <input type="text" maxlength="5" id="zipcode" name="user_zipcode">
     
         </fieldset>
         

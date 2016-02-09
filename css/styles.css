@@ -13,6 +13,7 @@ body {
     font-weight: 300;
     color: #969ca2;
     text-align: center;
+    max-width: 720px;
 }
 
 .siteHeader {
@@ -75,34 +76,43 @@ button {
     background-color: #52bab3;
     color: white;
     font-size: 1.5em;
-}
-
-input {
-    display: block;
+    border-radius: 3px;
+    padding: 15px;
+    border: none;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="text"],
-input[type="text"] {
+input[type="text"],
+select {
+    display: block;
     width: 100%;
     background: #eaebec;
     border-radius: 3px;
-    /*height: 40px;*/
-    padding: 5%;
+    padding: 15px;
     border: none;
     font-size: .8em;
+    height: 44px;
+}
+
+#zipcode {
+    width: 40%;
 }
 
 label {
     display: inline-block;
     font-size: .8em;
-    padding-top: 4%;
-    padding-bottom: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 input[placeholder="Required"] {
     text-align: right;
+    font-style: italic;
+}
+
+option[disabled] {
     font-style: italic;
 }
