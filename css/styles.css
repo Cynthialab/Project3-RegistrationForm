@@ -29,6 +29,8 @@ header {
 }
 
 footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-style: italic;
 }
 
@@ -59,14 +61,19 @@ Form Settings
     padding-bottom: 2px;
 }
 
-.lowerBorder {
-    border-bottom: 1px solid #2d3945;
-}
-
 legend {
     padding: 10px 0;
     font-weight: bold;
     font-size: 1.3em;
+}
+
+.lowerborder::after {
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    content: "";
+    width: 98%;
+    border-bottom: 1.5px solid #2d3945;
 }
 
 fieldset {
@@ -75,11 +82,20 @@ fieldset {
     margin: 0;
 }
 
+.newsletterLabels {
+    padding-top: 20px;
+}
+
+.button {
+    padding: 9px;   
+}
+
 button {
     width: 100%;
     background-color: #52bab3;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: 400;
     border-radius: 3px;
     padding: 15px;
     border: none;
@@ -90,6 +106,7 @@ input[type="email"],
 input[type="tel"],
 input[type="text"],
 input[type="text"],
+textarea,
 select {
     display: block;
     width: 100%;
@@ -103,10 +120,14 @@ select {
     margin-bottom: 5px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    display: inline-block;
-    background-color: green;
+textarea {
+    height: 80px;    
+}
+
+input, 
+textarea, 
+select:focus {
+    outline-color: #2d3945;
 }
 
 #zipcode {
@@ -125,6 +146,15 @@ label {
    font-style: italic;
 }
 
+select {
+    -webkit-appearance: none;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
 option[disabled] {
     font-style: italic;
 }
+

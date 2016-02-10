@@ -20,7 +20,7 @@
             <p class="lighterColor introP">Get the latest news on how your code is doing right in your inbox</p>
         </div>
         
-        <fieldset class="lighterColor lowerBorder">
+        <fieldset class="lighterColor lowerborder">
             
             <legend>Contact Information</legend>
             
@@ -103,29 +103,31 @@
         <fieldset class="lighterColor">
             <legend>Newsletter</legend>
             
-            <label>Select the newsletters you would like to receive</label><br>
+            <label class="newsletterLabels">Select the newsletters you would like to receive</label><br>
             
             <input type="checkbox" id="htmlNews" value="html_news" name="user_newstype">
                 <label for="htmlNews">HTML News</label><br>
             <input type="checkbox" id="cssNews" value="css_news" name="user_newstype">
-                <label for="cssNews">HTML News</label><br>
+                <label for="cssNews">CSS News</label><br>
             <input type="checkbox" id="jsNews" value="javascript_news" name="user_newstype">
                 <label for="jsNews">Javascript News</label><br>
             
-            <label> Newsletter format</label><br>
+            <label class="newsletterLabels">Newsletter format</label><br>
             
             <input type="radio" id="htmlFormat" value="html_format" name="letter_format">
                 <label for="htmlFormat">HTML</label><br>
             <input type="radio" id="plainFormat" value="plain_format" name="letter_format">
                 <label for="plainFormat">Plain text</label><br>
             
-            <label>Other topics you'd like to hear about</label>
+            <label class="newsletterLabels">Other topics you'd like to hear about</label>
             
             <textarea id="otherNews" name="other_news"></textarea>
             
         </fieldset>
         
-        <button type="submit">Sign Up</button>      
+        <div class="button">
+            <button type="submit">Sign Up</button>
+        </div>
     </form>
     
     <footer>Copyright The Code Review</footer>
