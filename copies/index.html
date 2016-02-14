@@ -17,21 +17,21 @@
     
         <div class="formIntro">
             <h2>Signup for our newsletter</h2>
-            <p class="introP">Get the latest news on how your code is doing right in your inbox</p>
+            <p class="lighterColor introP">Get the latest news on how your code is doing right in your inbox</p>
         </div>
         
-        <fieldset class="contactInfo lowerborder">
+        <fieldset class="lighterColor lowerborder">
             
             <legend>Contact Information</legend>
             
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="user_name" placeholder="Required" title="Format: Firstname Lastname" required> 
+            <input type="text" id="fullname" name="user_name" placeholder="Required" required>
             
             <label for="email">Email Address</label>
             <input type="email" id="email" name="user_email" placeholder="Required" required>
             
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone" title="Format: 111-321-1234" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="tel" id="phone" name="user_phone">
             
             <label for="address">Street Address</label>
             <input type="text" id="address" name="user_address">
@@ -40,8 +40,8 @@
             <input type="text" id="city" name="user_city">
             
             <label for="state">State</label>
-            <select id="state">
-                <option selected disabled hidden>Choose State</option>
+            <select>
+                <option selected disabled class="italics">Choose state</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -96,11 +96,11 @@
             </select>
             
             <label for="zipcode">Zip Code</label>
-            <input type="text" maxlength="5" id="zipcode" name="user_zipcode" pattern="[0-9]+" title="five-digit zip code"> 
+            <input type="text" maxlength="5" id="zipcode" name="user_zipcode">
     
         </fieldset>
         
-        <fieldset class="newsletter">
+        <fieldset class="lighterColor">
             <legend>Newsletter</legend>
             
             <label class="newsletterLabels">Select the newsletters you would like to receive</label><br>

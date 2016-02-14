@@ -13,10 +13,7 @@ body {
     font-weight: 300;
     color: #969ca2;
     text-align: center;
-    max-width: 600px;
-    background-image: url("../img/backgroundbottom.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    max-width: 650px;
 }
 
 .siteHeader {
@@ -34,7 +31,6 @@ header {
 footer {
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 100px;
     font-style: italic;
 }
 
@@ -108,6 +104,8 @@ button {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="text"],
+input[type="text"],
 textarea,
 select {
     display: block;
@@ -123,8 +121,7 @@ select {
 }
 
 textarea {
-    height: 80px;
-    resize: none;   
+    height: 80px;    
 }
 
 input, 
@@ -154,10 +151,10 @@ select {
     background-image: url("../img/arrow.png");
     background-repeat: no-repeat;
     background-position: right;
-    font-style: italic;   
+    
 }
 
-select:first-child {
+option[disabled] {
     font-style: italic;
 }
 
@@ -202,56 +199,8 @@ input[type="radio"]:checked + label span {
     background-repeat: no-repeat;
 }
 
-input:invalid {
-    border: 2px solid #2d3945;
-}
-
-
-
-/*-------
-Effects
--------*/
-
-input,
-textarea {
-    transition: background-color 2s;
-}
-
-input:focus,
-textarea:focus {
-    background-color: antiquewhite;
-}
-
-
-/*-------
-Media Queries
--------*/
 
 @media screen and (min-width: 500px) {
     
-body {
-    font-size: 1em;    
-}
-    
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="text"],
-input[type="text"],
-select {
-    display: inline-block;
-    width: 74%;
-    margin-bottom: 25px;
-}
 
-label[for="fullname"],
-label[for="email"],
-label[for="phone"],
-label[for="address"],
-label[for="city"],
-label[for="state"],
-label[for="zipcode"] {
-     width: 25%;
 }
-}
-
